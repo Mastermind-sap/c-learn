@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void main()
+{
+int num,factorial=1;
+printf("Enter n:");
+scanf("%d",&num);
+for(int i=2;i<=num;i++)
+{
+factorial*=i;
+}
+printf("Factorial: %d",factorial);
+}
