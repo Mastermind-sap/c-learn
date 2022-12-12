@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int largestSmallest(int arr[],int size,int * result)
+void largestSmallest(int arr[],int size,int * result)
 {
 	result[0]=arr[0];
 	result[1]=arr[0];
