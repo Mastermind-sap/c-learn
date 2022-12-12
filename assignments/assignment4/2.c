@@ -1,9 +1,17 @@
+//https://www.youtube.com/watch?v=uI1J8o1rY10
+
 #include <stdio.h>
 
-int largest(int arr[],int size)
+int largestSmallest(int arr[],int size,int * result)
 {
-	int largest=arr[0];
-
+	result[0]=arr[0];
+	result[1]=arr[0];
+	for(int i=1;i<size;i++)
+	{
+		if (result[0]<arr[i]) result[0]=arr[i];
+		if (result[1]>arr[i]) result[1]=arr[i];
+	}
+}
 
 void main ()  
 {
@@ -23,5 +31,8 @@ void main ()
 		printf ("Element %d:",(i+1));  
 		scanf ("%d",&arr[i]);  
 	}
-	unique(arr,n);
+	int large_small[2];
+	largestSmallest(arr,n,large_small);
+	printf("Largest element:%d\n",large_small[0]);
+	printf("Smallest element:%d\n",large_small[1]);
 }
