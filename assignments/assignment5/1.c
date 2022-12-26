@@ -22,11 +22,11 @@ void shuffle(char str1[],int l1,char str2[],int l2,char res[])
 {	
 	//method 1
 	for(int i=0;i<l1+l2-1;i++)
-	{
+	{	
 		// if 1->str1 0->str2
 		if(randomRange(0,1)&&isNotNull(str1,l1))
 		{
-			int c=randomRange(0,l1-1);
+			int c=randomRange(0,l1-2);
 			if (str1[c]!='\0')
 			{
 				res[i]=str1[c];
@@ -37,7 +37,7 @@ void shuffle(char str1[],int l1,char str2[],int l2,char res[])
 		}
 		else if(isNotNull(str2,l2))
 		{
-			int c=randomRange(0,l2-1);
+			int c=randomRange(0,l2-2);
 			if (str2[c]!='\0')
 			{
 				res[i]=str2[c];
@@ -47,6 +47,7 @@ void shuffle(char str1[],int l1,char str2[],int l2,char res[])
 				i--;
 		}
 	}		
+	res[l1+l2-1]='\0';
 }
 
 void main()
@@ -56,7 +57,7 @@ void main()
 	scanf("%d",&l1);
 	printf("Enter second string size:");
 	scanf("%d",&l2);
-	char str1[l1],str2[l2],res[l1+l2-1];
+	char str1[l1],str2[l2],res[l1+l2];
 	printf("Enter first string:");
 	//scanf("%s",str1);->Problem in it takes " " as the endpoint of input and after " " it takes input for the next variable
 	//scanf("%[^\n]s",str1); //Endpoint of input is new line->will not take input here read the below link
@@ -69,6 +70,8 @@ void main()
 	fgets(str2,l2,stdin);
 	printf("Str1:%s\n",str1);
 	printf("Str2:%s\n",str2);
+	for(l1=0;str1[l1]!='\0';l1++);
+	for(l2=0;str2[l2]!='\0';l2++);
 	shuffle(str1,l1,str2,l2,res);
 	printf("Result:%s\n",res);
 }

@@ -6,19 +6,21 @@ int randomRange(int lower,int upper)
 	return (clock()%(upper-lower+1))+lower;	
 }
 
-void encrypt(char str[],char key[],int l)
+void encrypt(char str[],char key[])
 {	
-	for(int i=0;i<l-1;i++)
+	int i;
+	for(i=0;str[i]!='\0';i++)
 	{
-		int inc=randomRange(0,9);
+		int inc=randomRange(0,3);
 		str[i]=str[i]+inc;
 		key[i]=inc+48;
 	}
+	key[i]='\0';
 }
 
-void decrypt(char str[],char key[],int l)
+void decrypt(char str[],char key[])
 {	
-	for(int i=0;i<l-1;i++)
+	for(int i=0;str[i]!='\0';i++)
 		str[i]-=(key[i]-48);
 }
 
@@ -41,7 +43,7 @@ void main()
 	switch(choice)
 	{
 		case 1:
-			encrypt(str,key,l);
+			encrypt(str,key);
 			printf("Encrypted string:%s\n",str);
 			printf("Key:%s\n",key);
 			break;
@@ -49,7 +51,7 @@ void main()
 			printf("Enter key:");
 			getchar();
 			fgets(key,l,stdin);
-			decrypt(str,key,l);
+			decrypt(str,key);
 			printf("Decrypted string: %s\n",str);
 			break;
 		default:
