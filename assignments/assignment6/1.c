@@ -1,3 +1,4 @@
+// REFER: https://www.geeksforgeeks.org/sieve-of-eratosthenes/
 #include <stdio.h>
 
 void SieveOfEratosthenes(int n)
