@@ -21,8 +21,8 @@ void main()
 	{
 		x[0][i]=random32();
 		x[1][i]=random32();
-		x[0][i]=random32();
-		x[1][i]=random32();
+		y[0][i]=random32();
+		y[1][i]=random32();
 	}
 	// We can also use "double result=evaluate(&x[0][0],&y[0][0],n);"
 	// REFER:https://www.geeksforgeeks.org/pass-2d-array-parameter-c/
