@@ -41,7 +41,7 @@ void shuffle(char str[])
 		}
 }	
 
-void password(char s[9])
+void password(char s[])
 {
 	s[0]=smallLetter();
 	s[1]=capitalLetter();
