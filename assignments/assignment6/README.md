@@ -16,6 +16,6 @@
 ### For questions pdf [click here](https://github.com/Mastermind-sap/c-learn/blob/main/assignments/assignment6/ICP_2022_Assignment_VI.pdf)
 
 ### References
-- [random.h](https://github.com/patgiri/C-programming/blob/main/random.h) -- By [Ripon Patgiri Sir](https://github.com/patgiri) 
+- [random.h](https://github.com/patgiri/C-programming/blob/main/random.h) -- By [Dr. Ripon Patgiri](https://github.com/patgiri) 
 
 ---
