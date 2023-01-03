@@ -14,6 +14,16 @@
 
 ---
 
+### Steps to run a program
+
+Enter the following commands in the terminal/command prompt
+
+Compilation: `gcc filename.c`
+
+Running the code: `./a.out`
+
+---
+
 ### System specifications
 
 | **Laptop Model** | HP 250 G3  Series (L9S61PA) Notebook |
