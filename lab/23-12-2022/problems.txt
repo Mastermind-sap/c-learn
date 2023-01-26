@@ -1,0 +1,6 @@
+1.	Write a function to find out the GCD of two numbers.
+2.	Convert binary to hexadecimal and octal representation.
+3.	Multiply two matrices, A[][] and B[][] and store the result in C[][].
+4.	Write a program to display major and minor diagonal elements.
+5.	Sum 1 to n using recursion.
+6.	Write a function to find nth Fibonacci number using recursion.
