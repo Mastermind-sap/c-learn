@@ -1,5 +1,6 @@
 # [College Assignments](https://github.com/Mastermind-sap/c-learn/tree/main/assignments)
 ### This directory contains all the Computer Science College assignments
+
 ---
 
 ### Contents
@@ -36,7 +37,7 @@ Running the code: `./a.out`
 
 ---
 
-### About Author
+### [About Author](https://mastermind-sap.github.io/c-learn/aboutme/index)
 
 | **Name** | *Saptarshi Adhikari* |
 | ----------- | ----------- |
