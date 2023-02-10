@@ -20,5 +20,6 @@ void main()
     int b;
     scanf("%d",&b);
     int d=binaryToDec(b);
-    printf("Hexadecimal conversion: %x",d);
+    printf("Hexadecimal conversion: %x\n",d);
+    printf("Octal conversion: %o\n",d);
 }
